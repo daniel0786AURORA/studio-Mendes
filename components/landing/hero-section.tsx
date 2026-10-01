@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Calendar, MessageCircle } from "lucide-react";
+import { Radar, MessageCircle } from "lucide-react";
 
-const CALENDLY = "https://calendly.com/danielsm0786/30min?month=2026-09";
 const WHATSAPP = "https://wa.me/5551984705191";
 
 const words = ["o gargalo.", "a oportunidade.", "o próximo passo.", "o que destrava."];
@@ -218,7 +217,7 @@ export function HeroSection() {
             href="#snapshot"
             className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 bg-white text-black px-7 h-14 text-base font-medium shadow-[0_0_40px_rgba(255,255,255,.10)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/90 hover:shadow-[0_0_55px_rgba(236,168,214,.22)] w-full sm:w-auto"
           >
-            <Calendar className="w-4 h-4" />
+            <Radar className="w-4 h-4" />
             Fazer meu Snapshot gratuito
           </a>
           <a
@@ -238,7 +237,7 @@ export function HeroSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          SNAPSHOT GRATUITO · 25–30 MIN · SEM PACOTE PRONTO · DIAGNÓSTICO ANTES DA EXECUÇÃO
+          SNAPSHOT GRATUITO · ~3 MIN · RESULTADO NA HORA · SEM COMPROMISSO
         </p>
         </div>
       </div>
