@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Pré-análise",
+    title: "Snapshot",
     subtitle: "gratuita",
-    description: "30 minutos pra entender seu momento, seus objetivos e onde está o gargalo. Sem custo e sem compromisso.",
+    description: "Uma pré-análise gratuita de 25–30 minutos para entender o momento e identificar onde vale investigar mais fundo.",
   },
   {
     number: "02",
-    title: "Plano",
-    subtitle: "sob medida",
-    description: "Desenhamos um caminho com prioridades claras. A proposta nasce do diagnóstico — não de um pacote fechado.",
+    title: "Scan",
+    subtitle: "diagnóstico",
+    description: "Aprofundamos os cinco pilares, organizamos score, gargalos, quick wins e uma rota clara de prioridades.",
   },
   {
     number: "03",
-    title: "Execução",
-    subtitle: "integrada",
-    description: "Comunicação, tecnologia e negócio caminhando juntos, com uma única equipe responsável pelo todo.",
+    title: "Mission",
+    subtitle: "resolver",
+    description: "Uma missão nasce para atacar o gargalo escolhido. Usamos marketing, tecnologia e negócios na medida que o problema exigir.",
   },
   {
     number: "04",
-    title: "Evolução",
-    subtitle: "contínua",
-    description: "Acompanhamos os números, ajustamos a rota e vamos escalando o que funciona.",
+    title: "Re-Scan",
+    subtitle: "evoluir",
+    description: "Medimos novamente, enxergamos o que mudou e definimos o próximo gargalo. Evolução em ciclos, não serviço por inércia.",
   },
 ];
 
@@ -68,16 +68,16 @@ export function HowItWorksSection() {
             <div className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"}`}>
               <span className="inline-flex items-center gap-3 text-sm font-mono text-white/40 mb-8">
                 <span className="w-12 h-px bg-white/20" />
-                06 · Como Funciona
+                COMO FUNCIONA
               </span>
             </div>
             
             <h2 className={`text-5xl md:text-6xl lg:text-[92px] font-display tracking-tight leading-[0.9] transition-all duration-1000 delay-100 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}>
-              <span className="block">Clareza antes</span>
-              <span className="block text-white/40">de qualquer</span>
-              <span className="block text-white/20">investimento.</span>
+              <span className="block">Diagnóstico antes</span>
+              <span className="block text-white/40">de execução.</span>
+              <span className="block text-white/20">Evolução depois.</span>
             </h2>
           </div>
 
