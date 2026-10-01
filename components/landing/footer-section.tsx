@@ -7,14 +7,15 @@ const WHATSAPP = "https://wa.me/5551984705191";
 
 const footerLinks = {
   Navegação: [
-    { name: "Serviços", href: "#servicos" },
-    { name: "Na prática", href: "#servicos" },
+    { name: "Na prática", href: "#na-pratica" },
+    { name: "Snapshot", href: "#snapshot" },
+    { name: "Modelo", href: "#metodo" },
+    { name: "Studio Mendes Scan", href: "#scan" },
     { name: "Como funciona", href: "#como-funciona" },
-    { name: "Ferramentas", href: "#ferramentas" },
   ],
   Contato: [
     { name: "Falar no WhatsApp", href: WHATSAPP },
-    { name: "Agendar pré-análise", href: CALENDLY },
+    { name: "Fazer Snapshot", href: "#snapshot" },
   ],
 };
 
