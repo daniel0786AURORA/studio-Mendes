@@ -217,7 +217,7 @@ export function HeroSection() {
             href={CALENDLY}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white px-7 h-14 text-base font-medium transition-colors w-full sm:w-auto"
+            className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 bg-white text-black px-7 h-14 text-base font-medium shadow-[0_0_40px_rgba(255,255,255,.10)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/90 hover:shadow-[0_0_55px_rgba(236,168,214,.22)] w-full sm:w-auto"
           >
             <Calendar className="w-4 h-4" />
             Fazer meu Snapshot
@@ -226,7 +226,7 @@ export function HeroSection() {
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-green-600 hover:bg-green-500 text-white px-7 h-14 text-base font-medium transition-colors w-full sm:w-auto"
+            className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 bg-black/30 backdrop-blur-md text-white px-7 h-14 text-base font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-white/[.08] w-full sm:w-auto"
           >
             <MessageCircle className="w-4 h-4" />
             Falar no WhatsApp
