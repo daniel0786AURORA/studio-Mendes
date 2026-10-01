@@ -57,9 +57,7 @@ export function CtaSection() {
                   PRÓXIMO PASSO
                 </span>
                 <h2 className="text-5xl md:text-6xl lg:text-[68px] font-display tracking-tight mb-8 leading-[0.98]">
-                  Comece com uma
-                  <br />
-                  pré-análise gratuita.
+                  Teu mapa é o começo.\n                  <br />\n                  A conversa traz o contexto.
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
@@ -72,16 +70,16 @@ export function CtaSection() {
                     href={CALENDLY}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white px-8 h-14 text-base font-medium transition-colors w-full sm:w-auto"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground text-background hover:opacity-90 px-8 h-14 text-base font-medium transition-all hover:-translate-y-0.5 w-full sm:w-auto"
                   >
                     <Calendar className="w-4 h-4" />
-                    Agendar meu Snapshot
+                    Aprofundar meu diagnóstico
                   </a>
                   <a
                     href={WHATSAPP}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-green-600 hover:bg-green-500 text-white px-8 h-14 text-base font-medium transition-colors w-full sm:w-auto"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/[.05] px-8 h-14 text-base font-medium transition-all hover:-translate-y-0.5 w-full sm:w-auto"
                   >
                     <MessageCircle className="w-4 h-4" />
                     Falar no WhatsApp
