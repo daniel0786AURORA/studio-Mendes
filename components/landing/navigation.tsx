@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const CALENDLY = "https://calendly.com/danielsm0786/30min?month=2026-09";
-
 const navLinks = [
   { name: "Na prática", href: "#na-pratica" },
   { name: "Modelo", href: "#metodo" },
@@ -69,9 +67,9 @@ export function Navigation() {
             <Button
               asChild
               size="sm"
-              className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-indigo-600 hover:bg-indigo-500 text-white px-4 h-8 text-xs" : "bg-indigo-600 hover:bg-indigo-500 text-white px-6"}`}
+              className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-foreground text-background hover:opacity-90 px-4 h-8 text-xs" : "bg-white text-black hover:bg-white/90 px-6"}`}
             >
-              <a href={CALENDLY} target="_blank" rel="noopener noreferrer">Pré-análise Gratuita</a>
+              <a href="#snapshot">Fazer Snapshot</a>
             </Button>
           </div>
 
@@ -130,10 +128,10 @@ export function Navigation() {
           >
             <Button 
               asChild
-              className="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full h-14 text-base"
+              className="flex-1 bg-foreground text-background hover:opacity-90 rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <a href={CALENDLY} target="_blank" rel="noopener noreferrer">Pré-análise Gratuita</a>
+              <a href="#snapshot">Fazer Snapshot</a>
             </Button>
           </div>
         </div>
