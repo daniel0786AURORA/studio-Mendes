@@ -6,7 +6,7 @@ import { Calendar, MessageCircle } from "lucide-react";
 const CALENDLY = "https://calendly.com/danielsm0786/30min?month=2026-09";
 const WHATSAPP = "https://wa.me/5551984705191";
 
-const words = ["crescer por inteiro.", "florescer.", "escalar.", "evoluir."];
+const words = ["o gargalo.", "a oportunidade.", "o próximo passo.", "o que destrava."];
 
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");
@@ -179,7 +179,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-xs sm:text-sm font-mono text-white/60 tracking-wide">
             <span className="w-8 h-px bg-white/30" />
-            ESTÚDIO DE NEGÓCIOS · TECNOLOGIA · COMUNICAÇÃO
+            STUDIO DE NEGÓCIOS · TECNOLOGIA · MARKETING
           </span>
         </div>
         
@@ -190,8 +190,7 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">Um único estúdio pra</span>
-            <span className="block">fazer seu negócio</span>
+            <span className="block">Antes de vender uma solução,</span>\n            <span className="block">a gente encontra</span>
             <span className="relative inline-block min-h-[1.1em]">
               <BlurWord word={words[wordIndex]} trigger={wordIndex} />
             </span>
@@ -221,7 +220,7 @@ export function HeroSection() {
             className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white px-7 h-14 text-base font-medium transition-colors w-full sm:w-auto"
           >
             <Calendar className="w-4 h-4" />
-            Agendar Pré-análise Gratuita
+            Fazer meu Snapshot
           </a>
           <a
             href={WHATSAPP}
@@ -240,7 +239,7 @@ export function HeroSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          30 minutos · sem custo · sem compromisso · diagnóstico antes de qualquer proposta
+          SNAPSHOT GRATUITO · 25–30 MIN · SEM PACOTE PRONTO · DIAGNÓSTICO ANTES DA EXECUÇÃO
         </p>
         </div>
       </div>
