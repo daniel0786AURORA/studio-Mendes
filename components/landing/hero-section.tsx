@@ -190,7 +190,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">Antes de vender uma solução,</span>\n            <span className="block">a gente encontra</span>
+            <span className="block">Antes de vender uma solução,</span>
+            <span className="block">a gente encontra </span>
             <span className="relative inline-block min-h-[1.1em]">
               <BlurWord word={words[wordIndex]} trigger={wordIndex} />
             </span>
