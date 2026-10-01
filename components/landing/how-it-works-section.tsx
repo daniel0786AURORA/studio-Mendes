@@ -6,8 +6,8 @@ const steps = [
   {
     number: "01",
     title: "Snapshot",
-    subtitle: "gratuita",
-    description: "Uma pré-análise gratuita de 25–30 minutos para entender o momento e identificar onde vale investigar mais fundo.",
+    subtitle: "mapa inicial",
+    description: "Tu responde 10 perguntas e recebe na hora o radar dos cinco pilares, tuas notas e uma sugestão inicial de prioridade.",
   },
   {
     number: "02",
