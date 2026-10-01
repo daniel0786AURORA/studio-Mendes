@@ -7,6 +7,7 @@ import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
 import { SnapshotSection } from "@/components/landing/snapshot-section";
+import { SnapshotExplainerSection } from "@/components/landing/snapshot-explainer-section";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <PlainLanguageSection />
+      <SnapshotExplainerSection />
       <SnapshotSection />
       <StudioModelSection />
       <ScanSection />
