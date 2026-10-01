@@ -7,12 +7,10 @@ import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
 import { SnapshotSection } from "@/components/landing/snapshot-section";
-import { LivingRoots } from "@/components/landing/living-roots";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <LivingRoots />
       <Navigation />
       <HeroSection />
       <PlainLanguageSection />
