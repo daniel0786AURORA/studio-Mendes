@@ -48,7 +48,7 @@ export function FooterSection() {
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Um único estúdio pra fazer seu negócio crescer por inteiro — negócios, tecnologia e comunicação tratados como um raciocínio só.
+                Diagnóstico, estratégia e execução conectando marketing, tecnologia e negócios para resolver o gargalo certo — na ordem certa.
               </p>
 
               <div className="flex gap-6">
@@ -91,7 +91,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2024 Studio Mendes. Todos os direitos reservados.
+            &copy; 2026 Studio Mendes. Todos os direitos reservados.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
