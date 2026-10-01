@@ -32,7 +32,7 @@ export function CtaSection() {
   };
 
   return (
-    <section ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="proximo-passo" ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div
           className={`relative border border-foreground transition-all duration-1000 ${
@@ -54,7 +54,7 @@ export function CtaSection() {
               <div className="flex-1">
                 <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
                   <span className="w-8 h-px bg-foreground/30" />
-                  09 · Próximo Passo
+                  PRÓXIMO PASSO
                 </span>
                 <h2 className="text-5xl md:text-6xl lg:text-[68px] font-display tracking-tight mb-8 leading-[0.98]">
                   Comece com uma
@@ -75,7 +75,7 @@ export function CtaSection() {
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white px-8 h-14 text-base font-medium transition-colors w-full sm:w-auto"
                   >
                     <Calendar className="w-4 h-4" />
-                    Agendar Pré-análise Gratuita
+                    Agendar meu Snapshot
                   </a>
                   <a
                     href={WHATSAPP}
@@ -89,7 +89,7 @@ export function CtaSection() {
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  Resposta em até 1 dia útil · Atendimento direto com o fundador
+                  25–30 minutos · gratuito · sem compromisso · atendimento direto
                 </p>
               </div>
 
