@@ -1,15 +1,9 @@
 import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
-import { FeaturesSection } from "@/components/landing/features-section";
-import { InfrastructureSection } from "@/components/landing/infrastructure-section";
 import { PlainLanguageSection } from "@/components/landing/plain-language-section";
-import { MetricsSection } from "@/components/landing/metrics-section";
-import { SecuritySection } from "@/components/landing/security-section";
+import { StudioModelSection } from "@/components/landing/studio-model-section";
+import { ScanSection } from "@/components/landing/scan-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
-import { PricingSection } from "@/components/landing/pricing-section";
-import { DevelopersSection } from "@/components/landing/developers-section";
-import { IntegrationsSection } from "@/components/landing/integrations-section";
-import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
 
@@ -18,16 +12,10 @@ export default function Home() {
     <main className="relative min-h-screen overflow-x-hidden">
       <Navigation />
       <HeroSection />
-      <FeaturesSection />
-      <InfrastructureSection />
       <PlainLanguageSection />
-      <MetricsSection />
-      <SecuritySection />
+      <StudioModelSection />
+      <ScanSection />
       <HowItWorksSection />
-      <PricingSection />
-      <DevelopersSection />
-      <IntegrationsSection />
-      <TestimonialsSection />
       <CtaSection />
       <FooterSection />
     </main>
