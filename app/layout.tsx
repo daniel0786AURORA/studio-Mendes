@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Studio Mendes — Negócios, Tecnologia e Comunicação',
-  description: 'Um único estúdio pra fazer seu negócio crescer por inteiro. Da estratégia à execução, da comunicação ao sistema que sustenta a operação.',
+  title: 'Studio Mendes — Marketing, Tecnologia e Negócios',
+  description: 'Encontramos o gargalo que trava o crescimento e montamos a missão certa para resolver, conectando marketing, tecnologia e negócios.',
   generator: 'v0.app',
 }
 
