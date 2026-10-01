@@ -2,6 +2,7 @@ import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
 import { FeaturesSection } from "@/components/landing/features-section";
 import { InfrastructureSection } from "@/components/landing/infrastructure-section";
+import { PlainLanguageSection } from "@/components/landing/plain-language-section";
 import { MetricsSection } from "@/components/landing/metrics-section";
 import { SecuritySection } from "@/components/landing/security-section";
 import { HowItWorksSection } from "@/components/landing/how-it-works-section";
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <InfrastructureSection />
+      <PlainLanguageSection />
       <MetricsSection />
       <SecuritySection />
       <HowItWorksSection />
