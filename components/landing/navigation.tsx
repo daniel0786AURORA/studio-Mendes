@@ -7,9 +7,10 @@ import { Menu, X } from "lucide-react";
 const CALENDLY = "https://calendly.com/danielsm0786/30min?month=2026-09";
 
 const navLinks = [
-  { name: "Serviços", href: "#servicos" },
-  { name: "Como Funciona", href: "#como-funciona" },
-  { name: "Ferramentas", href: "#ferramentas" },
+  { name: "Na prática", href: "#na-pratica" },
+  { name: "Modelo", href: "#metodo" },
+  { name: "Studio Mendes Scan", href: "#scan" },
+  { name: "Como funciona", href: "#como-funciona" },
 ];
 
 export function Navigation() {
