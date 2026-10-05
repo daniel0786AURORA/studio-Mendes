@@ -57,7 +57,7 @@ export function CtaSection() {
                   PRÓXIMO PASSO
                 </span>
                 <h2 className="text-5xl md:text-6xl lg:text-[68px] font-display tracking-tight mb-8 leading-[0.98]">
-                  Teu mapa é o começo.\n                  <br />\n                  A conversa traz o contexto.
+                  Teu mapa é o começo. <br /> A conversa traz o contexto.
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
