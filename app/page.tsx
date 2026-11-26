@@ -9,10 +9,14 @@ import { FooterSection } from "@/components/landing/footer-section";
 import { SnapshotSection } from "@/components/landing/snapshot-section";
 import { SnapshotExplainerSection } from "@/components/landing/snapshot-explainer-section";
 import { ScopePricingSection } from "@/components/landing/scope-pricing-section";
+import { SiteAtmosphere } from "@/components/landing/site-atmosphere";
+import { ScrollReveal } from "@/components/landing/scroll-reveal";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
+      <SiteAtmosphere />
+      <ScrollReveal />
       <Navigation />
       <HeroSection />
       <PlainLanguageSection />

@@ -57,7 +57,7 @@ export function HowItWorksSection() {
     <section
       id="como-funciona"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-[oklch(0.09_0.01_260)] text-white overflow-hidden"
+      className="relative py-24 lg:py-32 text-white overflow-hidden"
     >
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-white/[0.02] blur-[100px] pointer-events-none" />
 
@@ -89,7 +89,8 @@ export function HowItWorksSection() {
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tree-uAia6REvB137CQyHFCf0za3O6h2zKO.png"
               alt=""
               aria-hidden="true"
-              className="absolute bottom-0 left-0 w-full h-full object-contain object-bottom"
+              className="absolute bottom-0 left-0 w-full h-full object-contain object-bottom mix-blend-screen opacity-90"
+              style={{ WebkitMaskImage: "radial-gradient(130% 95% at 50% 100%, black 42%, transparent 86%)", maskImage: "radial-gradient(130% 95% at 50% 100%, black 42%, transparent 86%)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.09_0.01_260)] via-transparent to-transparent pointer-events-none" />
           </div>
@@ -102,10 +103,10 @@ export function HowItWorksSection() {
               key={step.number}
               type="button"
               onClick={() => setActiveStep(index)}
-              className={`relative text-left p-8 border transition-all duration-500 ${
-                activeStep === index 
-                  ? "bg-[#000000] border-white/60" 
-                  : "bg-[#000000] border-white/25 hover:border-white/50"
+              className={`box-elegant relative text-left p-8 ${
+                activeStep === index
+                  ? "border-[#eca8d6]/55 bg-[#eca8d6]/[.05]"
+                  : ""
               }`}
             >
               <div className="flex items-center gap-4 mb-8">

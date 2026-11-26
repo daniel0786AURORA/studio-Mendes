@@ -25,7 +25,7 @@ const paths = [
 
 export function PlainLanguageSection() {
   return (
-    <section id="na-pratica" className="relative overflow-hidden bg-black py-24 text-white lg:py-32">
+    <section id="na-pratica" className="relative overflow-hidden py-24 text-white lg:py-32">
       <div className="absolute inset-0 opacity-50 [background:radial-gradient(circle_at_50%_100%,rgba(167,139,250,.16),transparent_42%)]" />
       <div className="relative mx-auto max-w-[1400px] px-6 lg:px-12">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
@@ -46,7 +46,7 @@ export function PlainLanguageSection() {
           <div className="lg:col-span-7">
             <div className="grid gap-4">
               {paths.map((item) => (
-                <article key={item.eyebrow} className="group relative overflow-hidden border border-white/10 bg-white/[.025] p-7 transition-all duration-500 hover:-translate-y-1 hover:border-white/30 lg:p-9">
+                <article key={item.eyebrow} className="group relative overflow-hidden box-elegant p-7 hover:border-white/30 lg:p-9">
                   <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-white/[.06] blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="relative flex gap-5">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-white/15 bg-black/30 transition-colors group-hover:border-[#eca8d6]/60">

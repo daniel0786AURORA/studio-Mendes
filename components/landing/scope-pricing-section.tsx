@@ -41,7 +41,7 @@ const planos = [
 
 export function ScopePricingSection() {
   return (
-    <section id="escopo" className="relative bg-background text-foreground py-24 lg:py-32 overflow-hidden">
+    <section id="escopo" className="relative text-foreground py-24 lg:py-32 overflow-hidden">
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
@@ -61,10 +61,8 @@ export function ScopePricingSection() {
           {planos.map((p) => (
             <div
               key={p.nome}
-              className={`relative flex flex-col p-8 lg:p-10 border transition-colors ${
-                p.destaque
-                  ? "border-foreground bg-foreground/[.03] lg:scale-[1.03] lg:z-10"
-                  : "border-foreground/10 hover:border-foreground/30"
+              className={`box-elegant relative flex flex-col p-8 lg:p-10 ${
+                p.destaque ? "lg:scale-[1.03] lg:z-10 border-[#eca8d6]/45" : ""
               }`}
             >
               {p.destaque && (

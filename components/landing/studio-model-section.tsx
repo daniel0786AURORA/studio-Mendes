@@ -21,7 +21,7 @@ export function StudioModelSection(){
     </div>
    </div>
    <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
-    {pillars.map((p)=><article key={p.name} className="group relative min-h-[300px] border border-foreground/10 bg-foreground/[.02] p-7 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:border-foreground/35">
+    {pillars.map((p)=><article key={p.name} className="group relative min-h-[300px] box-elegant p-7 overflow-hidden hover:border-foreground/35">
      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 [background:radial-gradient(circle_at_50%_0%,rgba(236,168,214,.10),transparent_55%)]"/>
      <div className="relative"><div className="flex justify-between items-center mb-16"><p.icon className="w-5 h-5"/><span className="font-mono text-xs text-muted-foreground">{p.n}</span></div><h3 className="text-3xl font-display mb-4">{p.name}</h3><p className="text-sm text-muted-foreground leading-relaxed">{p.text}</p></div>
     </article>)}

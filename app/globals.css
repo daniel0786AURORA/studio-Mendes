@@ -204,3 +204,117 @@
     100% { background-position: 0% 50%; }
   }
 }
+
+/* ===== Atmosfera e movimento (coesão com o hero) ===== */
+@layer utilities {
+  .site-aura { position: fixed; inset: 0; z-index: -10; pointer-events: none; overflow: hidden; }
+  .aura-blob {
+    position: absolute; border-radius: 9999px; filter: blur(90px);
+    mix-blend-mode: screen; will-change: transform;
+  }
+  @keyframes aura-drift-a { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(6vw,4vh) scale(1.18); } }
+  @keyframes aura-drift-b { 0%,100% { transform: translate(0,0) scale(1.15); } 50% { transform: translate(-5vw,-4vh) scale(1); } }
+  @keyframes aura-drift-c { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(4vw,-5vh) scale(1.1); } }
+  /* brilhos estáticos (performance) — o movimento fica por conta das pétalas */
+
+  .petal {
+    position: absolute; top: -6vh; width: 10px; height: 10px; border-radius: 80% 0 80% 0;
+    background: linear-gradient(135deg, #f6c9e4, #eca8d6);
+    opacity: 0; will-change: transform; filter: blur(.3px);
+    animation: petal-fall linear infinite;
+  }
+  @keyframes petal-fall {
+    0%   { transform: translateY(-6vh) translateX(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: .55; }
+    90%  { opacity: .35; }
+    100% { transform: translateY(108vh) translateX(8vw) rotate(540deg); opacity: 0; }
+  }
+
+  /* reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* brilho rosado atrás de títulos */
+  .glow-pink { position: relative; }
+  .glow-pink::before {
+    content: ''; position: absolute; left: -10%; top: -40%; width: 60%; height: 180%;
+    background: radial-gradient(closest-side, rgba(236,168,214,.16), transparent 70%);
+    pointer-events: none; z-index: -1;
+  }
+
+  /* hover com borda/brilho rosa para cards */
+  .card-glow { transition: border-color .4s ease, transform .4s cubic-bezier(.34,1.56,.64,1), box-shadow .4s ease; }
+  .card-glow:hover {
+    transform: translateY(-5px);
+    border-color: rgba(236,168,214,.5);
+    box-shadow: 0 18px 50px -20px rgba(236,168,214,.35);
+  }
+}
+
+/* ===== Boxes elegantes, retroiluminados + transições de seção ===== */
+@layer utilities {
+  .box-elegant {
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255,255,255,.11);
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.022));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.10), 0 24px 60px -34px rgba(236,168,214,.30);
+    transition: border-color .45s ease, transform .45s cubic-bezier(.34,1.56,.64,1), box-shadow .45s ease;
+  }
+  .box-elegant:hover {
+    transform: translateY(-6px);
+    border-color: rgba(236,168,214,.42);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.10), 0 30px 80px -30px rgba(236,168,214,.5);
+  }
+  .box-soft {
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255,255,255,.08);
+    background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  }
+  /* desfoque "não copie" para o teaser do mapa */
+  .tease-blur { filter: blur(5px); opacity: .8; user-select: none; }
+  /* fade suave no topo/base das seções para elas se fundirem */
+  .section-fade-top::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 120px;
+    background: linear-gradient(to bottom, var(--background), transparent);
+    pointer-events: none; z-index: 1;
+  }
+  .section-fade-bottom::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px;
+    background: linear-gradient(to top, var(--background), transparent);
+    pointer-events: none; z-index: 1;
+  }
+  /* barrinhas de evolução */
+  @keyframes bar-grow { from { transform: scaleY(.12); } to { transform: scaleY(1); } }
+  .evo-bar { transform-origin: bottom; animation: bar-grow 1.1s cubic-bezier(.22,1,.36,1) both; }
+  /* anel de nota girando suave ao entrar */
+  @keyframes ring-in { from { stroke-dashoffset: 999; } }
+}
+
+/* ===== Auditoria: cascata de cards, foco visível, reduzir movimento ===== */
+@layer utilities {
+  /* cards de um grid entram em sequência (só opacidade, não conflita com transform) */
+  .reveal [class*="grid"] > * { opacity: 0; transition: opacity .6s cubic-bezier(.22,1,.36,1); }
+  .reveal.in [class*="grid"] > * { opacity: 1; }
+  .reveal.in [class*="grid"] > *:nth-child(1) { transition-delay: .05s; }
+  .reveal.in [class*="grid"] > *:nth-child(2) { transition-delay: .13s; }
+  .reveal.in [class*="grid"] > *:nth-child(3) { transition-delay: .21s; }
+  .reveal.in [class*="grid"] > *:nth-child(4) { transition-delay: .29s; }
+  .reveal.in [class*="grid"] > *:nth-child(5) { transition-delay: .37s; }
+  .reveal.in [class*="grid"] > *:nth-child(n+6) { transition-delay: .45s; }
+
+  /* foco visível elegante (acessibilidade) */
+  a:focus-visible, button:focus-visible, [role="button"]:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid rgba(236,168,214,.85);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* respeita "reduzir movimento": sem pétalas, sem drift, sem reveal */
+@media (prefers-reduced-motion: reduce) {
+  .aura-blob, .petal, .evo-bar { animation: none !important; }
+  .petal { display: none; }
+  .reveal, .reveal [class*="grid"] > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+  * { scroll-behavior: auto !important; }
+}

@@ -20,8 +20,8 @@ export function SnapshotExplainerSection(){
      </div>
     </div>
     <div className="lg:col-span-7">
-     <div className="grid sm:grid-cols-2 gap-px bg-foreground/10 border border-foreground/10">
-      {steps.map(s=><article key={s.n} className="group relative bg-background p-7 lg:p-9 min-h-[245px] transition-colors hover:bg-foreground/[.025]">
+     <div className="grid sm:grid-cols-2 gap-4">
+      {steps.map(s=><article key={s.n} className="group relative box-elegant p-7 lg:p-9 min-h-[245px]">
        <div className="flex justify-between"><s.icon className="w-5 h-5"/><span className="font-mono text-xs text-muted-foreground">{s.n}</span></div>
        <h3 className="mt-12 font-display text-3xl">{s.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
       </article>)}

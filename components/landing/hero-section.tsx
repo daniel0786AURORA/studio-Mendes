@@ -6,7 +6,7 @@ import { Radar, MessageCircle } from "lucide-react";
 const WHATSAPP = "https://wa.me/5551984705191";
 const CALENDLY = "https://calendly.com/danielsm0786/30min";
 
-const words = ["o gargalo.", "a oportunidade.", "o próximo passo.", "o que destrava."];
+const words = ["o gargalo.", "o que trava.", "o problema certo.", "o maior atrito."];
 
 function BlurWord({ word, trigger }: { word: string; trigger: number }) {
   const letters = word.split("");

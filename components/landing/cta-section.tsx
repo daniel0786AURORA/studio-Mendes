@@ -96,7 +96,7 @@ export function CtaSection() {
                 <img
                   src="/images/bridge.png"
                   alt="Duas árvores conectadas por arcos de luz"
-                  className="w-full h-full object-contain object-bottom"
+                  className="w-full h-full object-contain object-bottom mix-blend-screen opacity-90" style={{ WebkitMaskImage: "radial-gradient(115% 100% at 50% 85%, black 45%, transparent 88%)", maskImage: "radial-gradient(115% 100% at 50% 85%, black 45%, transparent 88%)" }}
                 />
               </div>
             </div>
