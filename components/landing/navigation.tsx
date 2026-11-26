@@ -7,8 +7,9 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Na prática", href: "#na-pratica" },
   { name: "Modelo", href: "#metodo" },
-  { name: "Studio Mendes Scan", href: "#scan" },
+  { name: "O Mapa", href: "#scan" },
   { name: "Como funciona", href: "#como-funciona" },
+  { name: "Escopo", href: "#escopo" },
 ];
 
 export function Navigation() {
@@ -69,7 +70,7 @@ export function Navigation() {
               size="sm"
               className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-foreground text-background hover:opacity-90 px-4 h-8 text-xs" : "bg-white text-black hover:bg-white/90 px-6"}`}
             >
-              <a href="#snapshot">Fazer Snapshot</a>
+              <a href="https://calendly.com/danielsm0786/30min" target="_blank" rel="noopener noreferrer">Conversa grátis</a>
             </Button>
           </div>
 
@@ -131,7 +132,7 @@ export function Navigation() {
               className="flex-1 bg-foreground text-background hover:opacity-90 rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <a href="#snapshot">Fazer Snapshot</a>
+              <a href="https://calendly.com/danielsm0786/30min" target="_blank" rel="noopener noreferrer">Conversa grátis</a>
             </Button>
           </div>
         </div>

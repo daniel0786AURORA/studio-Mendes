@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Snapshot",
-    subtitle: "mapa inicial",
-    description: "Tu responde 10 perguntas e recebe na hora o radar dos cinco pilares, tuas notas e uma sugestão inicial de prioridade.",
+    title: "Conversa",
+    subtitle: "grátis",
+    description: "A gente senta, você conta teu momento, e eu já te mostro gargalos que talvez nem sabia que tinha. Sem custo.",
   },
   {
     number: "02",
-    title: "Scan",
+    title: "Mapa",
     subtitle: "diagnóstico",
-    description: "Aprofundamos os cinco pilares, organizamos score, gargalos, quick wins e uma rota clara de prioridades.",
+    description: "A gente mapeia o negócio inteiro e dá uma nota pra cada área — marketing, tecnologia e operação. Você enxerga onde trava.",
   },
   {
     number: "03",
-    title: "Mission",
+    title: "Execução",
     subtitle: "resolver",
-    description: "Uma missão nasce para atacar o gargalo escolhido. Usamos marketing, tecnologia e negócios na medida que o problema exigir.",
+    description: "A gente ataca o gargalo escolhido, no escopo que você contratar: uma área, duas, ou tudo. Na medida que o problema pedir.",
   },
   {
     number: "04",
-    title: "Re-Scan",
-    subtitle: "evoluir",
-    description: "Medimos novamente, enxergamos o que mudou e definimos o próximo gargalo. Evolução em ciclos, não serviço por inércia.",
+    title: "Evolução",
+    subtitle: "medir de novo",
+    description: "A nota sobe e você acompanha ao vivo. A gente mede de novo, mostra o que mudou e define o próximo alvo. Evolução em ciclos, não serviço por inércia.",
   },
 ];
 

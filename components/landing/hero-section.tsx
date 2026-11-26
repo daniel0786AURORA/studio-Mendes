@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { Radar, MessageCircle } from "lucide-react";
 
 const WHATSAPP = "https://wa.me/5551984705191";
+const CALENDLY = "https://calendly.com/danielsm0786/30min";
 
 const words = ["o gargalo.", "a oportunidade.", "o próximo passo.", "o que destrava."];
 
@@ -178,7 +179,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-xs sm:text-sm font-mono text-white/60 tracking-wide">
             <span className="w-8 h-px bg-white/30" />
-            STUDIO DE NEGÓCIOS · TECNOLOGIA · MARKETING
+            UMA AGÊNCIA — SÓ QUE ESTRUTURADA
           </span>
         </div>
         
@@ -189,8 +190,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">Antes de vender uma solução,</span>
-            <span className="block">a gente encontra </span>
+            <span className="block">A gente mapeia teu negócio,</span>
+            <span className="block">dá uma nota e ataca </span>
             <span className="relative inline-block min-h-[1.1em]">
               <BlurWord word={words[wordIndex]} trigger={wordIndex} />
             </span>
@@ -203,8 +204,8 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Da estratégia à execução, da comunicação ao sistema que sustenta a operação.
-          Três frentes tratadas como um raciocínio só — não como departamentos separados.
+          A maioria das agências vende tráfego, site ou post avulso.
+          A gente olha teu negócio inteiro — marketing, tecnologia e operação — acha onde trava e resolve o que move o ponteiro.
         </p>
 
         {/* CTAs */}
@@ -214,11 +215,11 @@ export function HeroSection() {
           }`}
         >
           <a
-            href="#snapshot"
+            href={CALENDLY} target="_blank" rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 rounded-full border border-white/20 bg-white text-black px-7 h-14 text-base font-medium shadow-[0_0_40px_rgba(255,255,255,.10)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/90 hover:shadow-[0_0_55px_rgba(236,168,214,.22)] w-full sm:w-auto"
           >
             <Radar className="w-4 h-4" />
-            Fazer meu Snapshot gratuito
+            Agendar conversa grátis
           </a>
           <a
             href={WHATSAPP}
@@ -237,7 +238,7 @@ export function HeroSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          SNAPSHOT GRATUITO · ~3 MIN · RESULTADO NA HORA · SEM COMPROMISSO
+          CONVERSA GRÁTIS · 30 MIN · VOCÊ SAI COM CLAREZA, CONTRATE OU NÃO
         </p>
         </div>
       </div>

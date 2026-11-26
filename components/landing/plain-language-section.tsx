@@ -39,7 +39,7 @@ export function PlainLanguageSection() {
               <span className="text-white/35"> está deixando dinheiro na mesa.</span>
             </h2>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/60">
-              E ajuda a corrigir. Às vezes o problema está em atrair clientes. Às vezes está na venda, na operação, na tecnologia ou na falta de informação para decidir. O Studio Mendes olha o conjunto antes de prescrever a solução.
+              E ajuda a corrigir. Às vezes o problema está em atrair clientes. Às vezes está na venda, na operação, na tecnologia ou na falta de informação para decidir. O Studio Mendes olha o conjunto antes de prescrever — e te entrega isso num mapa, com uma nota pra cada área.
             </p>
           </div>
 

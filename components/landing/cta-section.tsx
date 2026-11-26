@@ -73,7 +73,7 @@ export function CtaSection() {
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground text-background hover:opacity-90 px-8 h-14 text-base font-medium transition-all hover:-translate-y-0.5 w-full sm:w-auto"
                   >
                     <Calendar className="w-4 h-4" />
-                    Aprofundar meu diagnóstico
+                    Agendar conversa grátis
                   </a>
                   <a
                     href={WHATSAPP}
